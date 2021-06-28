@@ -3,7 +3,7 @@ const db = require('../../data/dbConfig');
 
 //get all projects
 function getAllProjects() {
-    return db('projects')
+    return db('projects as p')
 }
 
 // get by Id
