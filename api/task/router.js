@@ -15,7 +15,7 @@ router.get('/', (req, res, next) => {
 })
 
 // get by id
-router.get(':id', (req, res, next) => {
+router.get('/:id', (req, res, next) => {
     Tasks.findById(req.params.id)
     .then(task => {
         if (task) {

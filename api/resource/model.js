@@ -3,7 +3,9 @@ const db = require('../../data/dbConfig');
 
 // get all resources
 function getAllResources() {
-    return db('resources')
+    return db('resources as res')
+    .leftJoin('projects as p', 'res.resource_id', 'p.project_id')
+    .select('res.resource_id', 'res.resource_name','res.resource_description', 'p.project_name')
 }
 
 // find by id
