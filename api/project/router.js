@@ -32,15 +32,10 @@ router.get('/:id', (req, res, next) => {
 
 // newProject
 router.post('/', (req, res, next) => {
-    const {name} = req.body;
 
     Projects.create(req.body)
     .then(project => {
-        if (!name) {
-            res.status(400).json({message: "please provide a name for project"})
-        } else {
-            res.status(201).json(project)
-        }
+      res.status(201).json(project)
     })
     .catch(error => {
         next(error)
