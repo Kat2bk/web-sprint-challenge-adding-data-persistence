@@ -31,8 +31,8 @@ In this project you will be given a set of requirements and must design a databa
 
 3. `model.js` inside `api/project`, `api/resource` and `api/task`
 4. `router.js` inside `api/project`, `api/resource` and `api/task`
-5. migration file(s)
-6. seed file(s) **optional**
+<!-- 5. migration file(s)
+5. seed file(s) **optional** -->
 
 <!-- ### Required Dependencies
 
@@ -42,7 +42,7 @@ The project needs some additional NPM dependencies in order to work. -->
 
 <!-- Add `"start"`. `"server"`, `"migrate"` and `"rollback"` scripts to the `package.json` file. -->
 
-### Required Tables
+<!-- ### Required Tables
 
 Build the migration(s) in Knex inside the `data/migrations` folder using appropriate data types and constraints. **You must use the table names and the column names described below.** To give a primary key a name different than `id`, do `table.increments("project_id")` instead of `table.increments()`.
 
@@ -67,7 +67,7 @@ Build the migration(s) in Knex inside the `data/migrations` folder using appropr
   - [ ] `task_completed` - the database defaults it to `false` (integer 0) if not provided
   - [ ] `project_id` - required and points to an actual `project_id` in the `projects` table
 
-- [ ] A **resource assignment** connects a resource and a project, and is stored in a `project_resources` table. You decide what columns to use.
+- [ ] A **resource assignment** connects a resource and a project, and is stored in a `project_resources` table. You decide what columns to use. -->
 
 ### Required Endpoints
 
