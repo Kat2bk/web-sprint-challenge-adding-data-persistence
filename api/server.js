@@ -3,9 +3,12 @@ const express = require('express');
 const server = express()
 const projectsRouter = require('./project/router');
 const resourceRouter = require('./resource/router');
+const tasksRouter = require('./task/router');
 // routers
 server.use(express.json())
 
+
+server.use('/api/tasks', tasksRouter)
 server.use('/api/resources', resourceRouter)
 server.use('/api/projects', projectsRouter)
 
